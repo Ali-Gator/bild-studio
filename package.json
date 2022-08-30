@@ -1,14 +1,17 @@
 {
-  "name": "display-task",
+  "name": "bild-studio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ali-gator.github.io/display-task",
+  "homepage": "https://ali-gator.github.io",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.3.2"
   },
   "scripts": {
     "start": "react-scripts start",

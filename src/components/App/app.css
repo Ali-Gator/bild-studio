@@ -9,6 +9,8 @@
   line-height: 1.57;
   box-sizing: border-box;
   min-width: 320px;
+  max-width: 1400px;
+  margin: 0 auto;
   color: #8a8888;
   background-color: #fefefe;
   -webkit-font-smoothing: antialiased;
@@ -38,6 +40,22 @@
 }
 
 .link:active {
+  transform: scale(0.9);
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
   transform: scale(0.9);
 }
 
