@@ -1,6 +1,6 @@
-import logo from '../../assets/images/logo.png';
-import logo2x from '../../assets/images/logo@2x.png';
-import logo3x from '../../assets/images/logo@3x.png';
+import logo from '../../assets/icons/logo.png';
+import logo2x from '../../assets/icons/logo@2x.png';
+import logo3x from '../../assets/icons/logo@3x.png';
 import Menu from '../Menu/Menu';
 import './header.css';
 

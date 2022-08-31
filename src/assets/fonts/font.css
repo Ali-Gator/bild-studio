@@ -5,3 +5,20 @@
   font-display: swap;
   src: url('myriadPro-regular.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Novecento DemiBold';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('novecento-demiBold.woff2') format('woff2'),
+  url('novecento-demiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('helveticaNeue.otf') format('opentype');
+}

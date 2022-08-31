@@ -1,5 +1,4 @@
 import Hero from '../Hero/Hero';
-import './home.css';
 import Video from '../Video/Video';
 import OurProjects from '../OurProjects/OurProjects';
 

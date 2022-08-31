@@ -31,27 +31,27 @@
 }
 
 .header__social-icon_type_twitter {
-  background-image: url('../../assets/images/twitter.svg');
+  background-image: url('../../assets/icons/twitter.svg');
 }
 
 .header__social-icon_type_facebook {
-  background-image: url('../../assets/images/facebook.svg');
+  background-image: url('../../assets/icons/facebook.svg');
 }
 
 .header__social-icon_type_rss {
-  background-image: url('../../assets/images/rss.svg');
+  background-image: url('../../assets/icons/rss.svg');
 }
 
 .header__social-icon_type_pinterest {
-  background-image: url('../../assets/images/pinterest.svg');
+  background-image: url('../../assets/icons/pinterest.svg');
 }
 
 .header__social-icon_type_google-plus {
-  background-image: url('../../assets/images/google-plus.svg');
+  background-image: url('../../assets/icons/google-plus.svg');
 }
 
 .header__social-icon_type_dribble {
-  background-image: url('../../assets/images/dribble.svg');
+  background-image: url('../../assets/icons/dribble.svg');
 }
 
 .header__menu {

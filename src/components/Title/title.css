@@ -1,0 +1,26 @@
+.title {
+  background-color: #2ecc71;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 940px;
+  min-height: 60px;
+  margin: 0 auto;
+}
+
+.title__text {
+  font-family: 'Novecento DemiBold', 'Helvetica', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 10px;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
