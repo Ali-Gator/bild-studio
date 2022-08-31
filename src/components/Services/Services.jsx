@@ -43,8 +43,8 @@ function Services() {
         <ul className="services__tabs-list list">{renderTabs(textTabs)}</ul>
       </div>
       <div className="services__text-wrapper">
-        <p className="services__text">{textService[serviceIndex].text}</p>
-        {textService[serviceIndex].advantages && (
+        <p className="services__text">{textService[serviceIndex]?.text}</p>
+        {textService[serviceIndex]?.advantages && (
           <ul className="services__bullet-list">
             {renderAdvantages(textService[serviceIndex].advantages)}
           </ul>

@@ -1,5 +1,6 @@
 .about {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   max-width: 940px;
   margin: 30px auto 0;
   padding: 0 10px;
@@ -7,9 +8,9 @@
 }
 
 .about__image {
+  align-self: center;
   width: 100%;
   max-width: 380px;
-  justify-self: center;
 }
 
 .about__text-wrapper {
@@ -28,4 +29,28 @@
   font-size: 24px;
   font-weight: 600;
   margin: 0;
+}
+
+
+@media screen and (min-width: 960px) {
+  .about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    row-gap: 43px;
+  }
+
+  .about__text-wrapper_type_big {
+    width: calc(100% - 408px);
+    margin: 16px 0 0 28px;
+  }
+
+  .about__image {
+    align-self: flex-end;
+  }
+
+  .about__text-wrapper_type_medium {
+    width: 440px;
+  }
 }

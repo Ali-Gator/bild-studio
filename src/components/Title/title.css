@@ -24,3 +24,14 @@
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
 }
+
+@media screen and (min-width: 960px) {
+  .title-wrapper {
+    min-height: 100px;
+  }
+
+  .title__text {
+    font-size: 30px;
+    padding: 0;
+  }
+}

@@ -114,6 +114,7 @@ function OurProjects() {
           asNavFor={firstSliderRef}
           ref={setSecondRef}
           mobileFirst
+          initialSlide={2}
           nextArrow={<NextArrow />}
           prevArrow={<PrevArrow />}
         >

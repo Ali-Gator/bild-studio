@@ -9,7 +9,7 @@ function AboutInfo() {
         alt="Businessman is talking by phone"
         src={businessman}
       />
-      <div className="about__text-wrapper">
+      <div className="about__text-wrapper about__text-wrapper_type_big">
         <p className="about__caption">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
           eu erat lacus, vel congue mauris. Fusce velit justo, faucibus eu
@@ -28,7 +28,7 @@ function AboutInfo() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
       </div>
-      <div className="about__text-wrapper">
+      <div className="about__text-wrapper about__text-wrapper_type_medium">
         <p className="about__title">Mission Statement</p>
         <p className="about__caption">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
@@ -39,7 +39,7 @@ function AboutInfo() {
           Nulla facilisi. Pellentesque pellentesque arcu a elit congue lacinia.
         </p>
       </div>
-      <div className="about__text-wrapper">
+      <div className="about__text-wrapper about__text-wrapper_type_medium">
         <p className="about__title">Fun Facts</p>
         <p className="about__caption">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
