@@ -72,6 +72,7 @@
   display: block;
   padding: 12px 24px;
   transition-duration: .25s;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: #737373;
 }
@@ -101,7 +102,7 @@
     padding: 0;
     background-color: transparent;
     box-shadow: none;
-    column-gap: 38px;
+    column-gap: 28px;
   }
 
   .menu__link {
