@@ -67,12 +67,12 @@
 }
 
 .menu__link {
+  font-family: 'Novecento DemiBold', 'Helvetica', sans-serif;
   font-size: 18px;
   font-weight: 600;
   display: block;
   padding: 12px 24px;
   transition-duration: .25s;
-  letter-spacing: 2px;
   text-transform: uppercase;
   color: #737373;
 }
