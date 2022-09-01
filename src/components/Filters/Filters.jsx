@@ -1,11 +1,14 @@
+import { Fragment } from 'react';
 import './filters.css';
 import { textCategories } from '../../utils/constants';
 
-function Filters() {
+function Filters({ isGrid, setIsGrid }) {
+  const handleChangeView = () => setIsGrid(!isGrid);
+
   const renderCategoryFilters = () =>
     textCategories.map((category, index) => (
-      <>
-        <li className="filters__categories-item" key={category}>
+      <Fragment key={category}>
+        <li className="filters__categories-item">
           <button
             className={`filters__categories-button button ${
               true && 'filters__categories-button_active'
@@ -20,7 +23,7 @@ function Filters() {
             <span className="filters__categories-divider">/</span>
           </li>
         )}
-      </>
+      </Fragment>
     ));
 
   return (
@@ -32,19 +35,21 @@ function Filters() {
         <li className="filters__view-item">
           <button
             className={`filters__view-button filters__view-button_type_grid button ${
-              true && 'filters__view-button_active'
+              isGrid && 'filters__view-button_active'
             }`}
             type="button"
             aria-label="grid view"
+            onClick={handleChangeView}
           />
         </li>
         <li className="filters__view-item">
           <button
             className={`filters__view-button filters__view-button_type_list button ${
-              true && 'filters__view-button_active'
+              !isGrid && 'filters__view-button_active'
             }`}
             type="button"
             aria-label="list view"
+            onClick={handleChangeView}
           />
         </li>
       </ul>
