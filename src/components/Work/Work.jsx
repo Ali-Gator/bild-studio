@@ -5,7 +5,7 @@ import Filters from '../Filters/Filters';
 import './work.css';
 import Card from '../Card/Card';
 import getProjectCards from '../../utils/api';
-import { textCategories } from '../../utils/constants';
+import { messages, textCategories } from '../../utils/constants';
 
 function Work() {
   const [cards, setCards] = useState(null);
@@ -24,12 +24,13 @@ function Work() {
           category,
         });
         if (newCards.length === 0) {
-          setMessage('No more results');
+          setMessage(messages.NO_MORE_RESULT);
+        } else {
+          setCards([...cards, ...newCards]);
+          setPage((prev) => prev + 1);
         }
-        setCards([...cards, ...newCards]);
-        setPage((prev) => prev + 1);
       } catch (e) {
-        setMessage(e.message ?? 'Server error');
+        setMessage(e.message ?? messages.SERVER_ERR);
       }
     },
   });
@@ -48,15 +49,20 @@ function Work() {
     (async () => {
       try {
         setMessage('');
-        const initCards = await getProjectCards({ limit: 9, page, category });
+        setCards(null);
+        const initCards = await getProjectCards({
+          limit: 9,
+          page: 1,
+          category,
+        });
         if (initCards.length === 0) {
-          setMessage('No Results');
+          setMessage(messages.NO_RESULTS);
         } else {
           setCards(initCards);
           setPage(2);
         }
       } catch (e) {
-        setMessage(e.message ?? 'Server error');
+        setMessage(e.message ?? messages.SERVER_ERR);
       }
     })();
   }, [category]);

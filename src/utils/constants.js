@@ -58,4 +58,11 @@ export const textCategories = [
   'Web',
   'Applications',
 ];
+
 export const BASE_URL = 'http://localhost:3001';
+
+export const messages = {
+  NO_MORE_RESULT: 'No more results',
+  SERVER_ERR: 'Server error',
+  NO_RESULTS: 'No Results',
+};

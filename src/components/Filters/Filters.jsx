@@ -2,21 +2,10 @@ import { Fragment } from 'react';
 import './filters.css';
 import { textCategories } from '../../utils/constants';
 
-function Filters({
-  isGrid,
-  setIsGrid,
-  setCategory,
-  category,
-  setPage,
-  setCards,
-}) {
+function Filters({ isGrid, setIsGrid, setCategory, category }) {
   const handleChangeView = () => setIsGrid(!isGrid);
 
-  const handleChangeCategory = (e) => {
-    setCards(null);
-    setPage(1);
-    setCategory(e.target.textContent);
-  };
+  const handleChangeCategory = (e) => setCategory(e.target.textContent);
 
   const renderCategoryFilters = () =>
     textCategories.map((text, index) => (

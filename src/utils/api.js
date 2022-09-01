@@ -1,4 +1,4 @@
-import { BASE_URL, textCategories } from './constants';
+import { BASE_URL, messages, textCategories } from './constants';
 
 const getProjectCards = async ({ page, limit, category }) => {
   try {
@@ -14,7 +14,7 @@ const getProjectCards = async ({ page, limit, category }) => {
     }
     throw new Error(res.status);
   } catch (e) {
-    throw new Error(e.message ?? 'Server error');
+    throw new Error(e.message ?? messages.SERVER_ERR);
   }
 };
 
