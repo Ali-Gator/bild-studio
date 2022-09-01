@@ -1,3 +1,13 @@
+.work__message {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  margin: 20px 0 0;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .cards {
   display: grid;
   align-items: center;

@@ -5,42 +5,81 @@ import Filters from '../Filters/Filters';
 import './work.css';
 import Card from '../Card/Card';
 import getProjectCards from '../../utils/api';
+import { textCategories } from '../../utils/constants';
 
 function Work() {
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState(null);
   const [isGrid, setIsGrid] = useState(true);
   const [page, setPage] = useState(1);
-
-  const renderCards = () =>
-    cards.map((card) => <Card card={card} key={card.id} isGrid={isGrid} />);
+  const [category, setCategory] = useState(textCategories[0]);
+  const [message, setMessage] = useState('');
 
   const { observe } = useInView({
     rootMargin: '50px 0px',
     onEnter: async () => {
-      const newCards = await getProjectCards({ limit: 9, page });
-      setCards([...cards, ...newCards]);
-      setPage((prev) => prev + 1);
+      try {
+        const newCards = await getProjectCards({
+          limit: 9,
+          page,
+          category,
+        });
+        if (newCards.length === 0) {
+          setMessage('No more results');
+        }
+        setCards([...cards, ...newCards]);
+        setPage((prev) => prev + 1);
+      } catch (e) {
+        setMessage(e.message ?? 'Server error');
+      }
     },
   });
 
+  const renderCards = () =>
+    cards?.map((card, index) => (
+      <Card
+        card={card}
+        ref={index === cards.length - 1 ? observe : null}
+        key={card.id}
+        isGrid={isGrid}
+      />
+    ));
+
   useEffect(() => {
     (async () => {
-      const initCards = await getProjectCards({ limit: 9, page });
-      setCards(initCards);
+      try {
+        setMessage('');
+        const initCards = await getProjectCards({ limit: 9, page, category });
+        if (initCards.length === 0) {
+          setMessage('No Results');
+        } else {
+          setCards(initCards);
+          setPage(2);
+        }
+      } catch (e) {
+        setMessage(e.message ?? 'Server error');
+      }
     })();
-  }, []);
+  }, [category]);
 
   return (
     <>
       <Title>Check Out What I can Do</Title>
       <section className="work">
-        <Filters isGrid={isGrid} setIsGrid={setIsGrid} />
+        <Filters
+          isGrid={isGrid}
+          setIsGrid={setIsGrid}
+          setCategory={setCategory}
+          category={category}
+          setPage={setPage}
+          setCards={setCards}
+          setMessage={setMessage}
+        />
         <div
           className={`cards ${isGrid ? 'cards_type_grid' : 'cards_type_list'}`}
         >
           {renderCards()}
         </div>
-        <div ref={observe} />
+        {message && <p className="work__message">{message}</p>}
       </section>
     </>
   );

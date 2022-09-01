@@ -2,20 +2,35 @@ import { Fragment } from 'react';
 import './filters.css';
 import { textCategories } from '../../utils/constants';
 
-function Filters({ isGrid, setIsGrid }) {
+function Filters({
+  isGrid,
+  setIsGrid,
+  setCategory,
+  category,
+  setPage,
+  setCards,
+}) {
   const handleChangeView = () => setIsGrid(!isGrid);
 
+  const handleChangeCategory = (e) => {
+    setCards(null);
+    setPage(1);
+    setCategory(e.target.textContent);
+  };
+
   const renderCategoryFilters = () =>
-    textCategories.map((category, index) => (
-      <Fragment key={category}>
+    textCategories.map((text, index) => (
+      <Fragment key={text}>
         <li className="filters__categories-item">
           <button
             className={`filters__categories-button button ${
-              true && 'filters__categories-button_active'
+              category === text && 'filters__categories-button_active'
             }`}
             type="button"
+            disabled={category === text}
+            onClick={handleChangeCategory}
           >
-            {category}
+            {text}
           </button>
         </li>
         {textCategories.length > index + 1 && (
