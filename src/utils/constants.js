@@ -50,3 +50,11 @@ export const textService = [
 ];
 
 export const textTabs = ['Websites', 'Photography', 'SEO', 'Applications'];
+
+export const textCategories = [
+  'All',
+  'Print',
+  'Photography',
+  'Web',
+  'Applications',
+];
