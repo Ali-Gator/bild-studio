@@ -4,6 +4,7 @@ import Home from '../Home/Home';
 import Layout from '../Layout/Layout';
 import About from '../About/About';
 import Work from '../Work/Work';
+import Contact from '../Contact/Contact';
 
 function App() {
   return (
@@ -13,9 +14,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="work" element={<Work />} />
-          <Route path="contact" element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<p>404</p>} />
         </Route>
-        <Route path="*" element={<p>404</p>} />
       </Routes>
     </div>
   );

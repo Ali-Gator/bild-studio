@@ -100,7 +100,7 @@ function OurProjects() {
           centerMode={width > 1380}
           centerPadding="220px"
           slidesToShow={width > 950 ? 3 : 1}
-          // autoplay
+          autoplay
           draggable
           infinite
           mobileFirst

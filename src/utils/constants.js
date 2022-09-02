@@ -65,4 +65,13 @@ export const messages = {
   NO_MORE_RESULT: 'No more results',
   SERVER_ERR: 'Server error',
   NO_RESULTS: 'No Results',
+  NO_EMPTY: 'Cannot be empty',
+  NO_VALID_EMAIL: 'Email is not valid',
+  TOO_LONG_TEXT: "Message can't be more than 1000 chars",
 };
+
+export const RECAPTCHA_SITE_KEY = '6LdcVMkhAAAAALG6U4hGfZcVBQ6hTAwX5N-avYz3';
+
+export const EMAIL_REGEXP =
+  // eslint-disable-next-line
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

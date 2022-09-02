@@ -37,7 +37,7 @@ function Services() {
   return (
     <section className="services">
       <div className="services-title-wrapper">
-        <h2 className="services__title">Services</h2>
+        <h2 className="services__title subtitle">Services</h2>
       </div>
       <div className="services-tabs-wrapper">
         <ul className="services__tabs-list list">{renderTabs(textTabs)}</ul>
