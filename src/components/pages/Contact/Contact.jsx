@@ -2,8 +2,19 @@ import './contact.css';
 import { Helmet } from 'react-helmet-async';
 import Form from '../../ui/Form/Form';
 import Title from '../../ui/Title/Title';
+import { workingHours } from '../../../utils/constants';
 
 function Contact() {
+
+  const renderWorkingHours = (dataArr) =>
+    dataArr.map(data => (
+      <>
+        <dt className="contact__hours-weekdays">{data.days}</dt>
+        <dd className="contact__hours-time">{data.hours}</dd>
+      </>
+    ));
+
+
   return (
     <section className="contact">
       <Helmet>
@@ -51,14 +62,7 @@ function Contact() {
           <div className="contact__hours">
             <h2 className="contact__hours-title subtitle">Store Hours</h2>
             <dl className="contact__hours-list list">
-              <dt className="contact__hours-weekdays">Monday - Thursday</dt>
-              <dd className="contact__hours-time">8 am - 5 pm</dd>
-              <dt className="contact__hours-weekdays">Friday</dt>
-              <dd className="contact__hours-time">8 am - 6 pm</dd>
-              <dt className="contact__hours-weekdays">Saturday</dt>
-              <dd className="contact__hours-time">9 am - 5 pm</dd>
-              <dt className="contact__hours-weekdays">Sunday & Holidays</dt>
-              <dd className="contact__hours-time">Closed</dd>
+              {renderWorkingHours(workingHours)}
             </dl>
           </div>
         </div>

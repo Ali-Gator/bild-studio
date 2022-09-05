@@ -72,10 +72,6 @@ export const messages = {
 
 export const RECAPTCHA_SITE_KEY = '6LdcVMkhAAAAALG6U4hGfZcVBQ6hTAwX5N-avYz3';
 
-// export const EMAIL_REGEXP =
-//   // eslint-disable-next-line
-//   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
 export const inputsData = [
   {
     addClassName: 'form__input_type_small',
@@ -106,3 +102,22 @@ export const inputsData = [
     isRequired: true,
   },
 ];
+
+export const workingHours = [
+  {
+    days: 'Monday - Thursday',
+    hours: '8 am - 5 pm'
+  },
+  {
+    days: 'Friday',
+    hours: '8 am - 6 pm'
+  },
+  {
+    days: 'Saturday',
+    hours: '9 am - 5 pm'
+  },
+  {
+    days: 'Sunday & Holidays',
+    hours: 'Closed'
+  }
+]
