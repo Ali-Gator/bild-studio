@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/bild-studio/static/css/main.dfdfbb6c.css",
-    "main.js": "/bild-studio/static/js/main.a6a36311.js",
+    "main.css": "/bild-studio/static/css/main.5ee352cb.css",
+    "main.js": "/bild-studio/static/js/main.b579b861.js",
     "static/media/novecento-demiBold.ttf": "/bild-studio/static/media/novecento-demiBold.eba067408050b012779a.ttf",
     "static/media/about-businessman.png": "/bild-studio/static/media/about-businessman.0b28f3f56f040e4be41d.png",
     "static/media/myriadPro-regular.woff": "/bild-studio/static/media/myriadPro-regular.0c0973a02f40392384ac.woff",
@@ -38,11 +38,11 @@
     "static/media/icon-next-arrow.svg": "/bild-studio/static/media/icon-next-arrow.e47cdf833c66f024ff88.svg",
     "static/media/icon-bullet.svg": "/bild-studio/static/media/icon-bullet.2ebcba63e253af0b7f15.svg",
     "static/media/icon-close-white.svg": "/bild-studio/static/media/icon-close-white.14a0594a69e003099797.svg",
-    "main.dfdfbb6c.css.map": "/bild-studio/static/css/main.dfdfbb6c.css.map",
-    "main.a6a36311.js.map": "/bild-studio/static/js/main.a6a36311.js.map"
+    "main.5ee352cb.css.map": "/bild-studio/static/css/main.5ee352cb.css.map",
+    "main.b579b861.js.map": "/bild-studio/static/js/main.b579b861.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfdfbb6c.css",
-    "static/js/main.a6a36311.js"
+    "static/css/main.5ee352cb.css",
+    "static/js/main.b579b861.js"
   ]
 }
