@@ -1,10 +1,15 @@
 import './contact.css';
+import { Helmet } from 'react-helmet';
 import Form from '../../ui/Form/Form';
 import Title from '../../ui/Title/Title';
 
 function Contact() {
   return (
     <section className="contact">
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Our contacts" />
+      </Helmet>
       <Title>Got a Question or Inquiry?</Title>
       <iframe
         className="contact__map"

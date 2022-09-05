@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-cool-inview';
+import { Helmet } from 'react-helmet';
 import Title from '../../ui/Title/Title';
 import Filters from '../../ui/Filters/Filters';
 import './work.css';
@@ -69,6 +70,10 @@ function Work() {
 
   return (
     <>
+      <Helmet>
+        <title>Work</title>
+        <meta name="description" content="Our projects" />
+      </Helmet>
       <Title>Check Out What I can Do</Title>
       <section className="work">
         <Filters
