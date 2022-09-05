@@ -1,0 +1,16 @@
+.advantages {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.advantages__text {
+  font-family: 'HelveticaNeue', 'Helvetica', sans-serif;
+  margin: 20px 10px 0;
+}
+
+.advantages__bullet-list {
+  margin: 20px 10px 0;
+  padding: 0 0 0 10px;
+  list-style-position: inside;
+  list-style-image: url('../../../assets/icons/icon-bullet.svg');
+}

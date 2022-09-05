@@ -1,0 +1,18 @@
+.services-title-wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.services__title {
+  margin: 30px 10px 0;
+}
+
+@media screen and (min-width: 960px) {
+  .services {
+    margin: 0 0 52px 0;
+  }
+
+  .services__title {
+    margin: 26px 0 0;
+  }
+}

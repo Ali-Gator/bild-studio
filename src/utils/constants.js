@@ -72,6 +72,37 @@ export const messages = {
 
 export const RECAPTCHA_SITE_KEY = '6LdcVMkhAAAAALG6U4hGfZcVBQ6hTAwX5N-avYz3';
 
-export const EMAIL_REGEXP =
-  // eslint-disable-next-line
-  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+// export const EMAIL_REGEXP =
+//   // eslint-disable-next-line
+//   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+export const inputsData = [
+  {
+    addClassName: 'form__input_type_small',
+    type: 'text',
+    name: 'name',
+    placeholder: 'Name',
+    isRequired: true,
+  },
+  {
+    addClassName: 'form__input_type_small',
+    type: 'email',
+    name: 'email',
+    placeholder: 'Email Address',
+    isRequired: true,
+  },
+  {
+    addClassName: 'form__input_type_small',
+    type: 'text',
+    name: 'subject',
+    placeholder: 'Subject',
+    isRequired: false,
+  },
+  {
+    addClassName: 'form__input_type_big',
+    type: 'textarea',
+    name: 'message',
+    placeholder: 'Message',
+    isRequired: true,
+  },
+];

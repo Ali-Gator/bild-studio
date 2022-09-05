@@ -1,0 +1,24 @@
+.form__input {
+  font-family: 'HelveticaNeue', 'Helvetica', sans-serif;
+  padding: 15px;
+  color: #737373;
+  border: solid 2px #8a8888;
+}
+
+.form__input_type_small {
+  max-width: 320px;
+}
+
+.form__input_type_big {
+  min-height: 100px;
+}
+
+@media screen and (min-width: 960px) {
+  .form__input {
+    padding: 13px;
+  }
+
+  .form__input_type_big {
+    min-height: 190px;
+  }
+}

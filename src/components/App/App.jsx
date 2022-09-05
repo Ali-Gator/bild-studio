@@ -1,10 +1,10 @@
 import './app.css';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../Home/Home';
+import Home from '../pages/Home/Home';
 import Layout from '../Layout/Layout';
-import About from '../About/About';
-import Work from '../Work/Work';
-import Contact from '../Contact/Contact';
+import About from '../pages/About/About';
+import Work from '../pages/Work/Work';
+import Contact from '../pages/Contact/Contact';
 
 function App() {
   return (
