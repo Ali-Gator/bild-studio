@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Title from '../../ui/Title/Title';
 import AboutInfo from '../../ui/AboutInfo/AboutInfo';
 import Services from '../../ui/Services/Services';

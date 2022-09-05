@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Header from './Header/Header';
 import Banner from './Banner/Banner';
 import Footer from './Footer/Footer';

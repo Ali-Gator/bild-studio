@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-cool-inview';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Title from '../../ui/Title/Title';
 import Filters from '../../ui/Filters/Filters';
 import './work.css';

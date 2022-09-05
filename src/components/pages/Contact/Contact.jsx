@@ -1,5 +1,5 @@
 import './contact.css';
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import Form from '../../ui/Form/Form';
 import Title from '../../ui/Title/Title';
 
