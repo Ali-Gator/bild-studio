@@ -9,6 +9,8 @@
 + json-server + faker (mock data)
 + gh-pages (deploy)
 + BEM (class naming)
++ google Maps
++ google reCaptcha v3
 + eslint (code style)
 + prettier (formatter)
 
